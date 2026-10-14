@@ -1,0 +1,24 @@
+[project]
+name = "retaillens"
+version = "0.1.0"
+description = "Customer and sales intelligence platform using the UCI Online Retail dataset"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "openpyxl",
+    "pandas",
+    "plotly",
+    "psycopg2-binary",
+    "python-dotenv",
+    "scikit-learn",
+    "sqlalchemy",
+    "streamlit",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
